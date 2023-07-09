@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login</title>
+	<style>
+		body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			color: #333333;
+		}
+
+		.container {
+			max-width: 500px;
+			margin: auto;
+			background-color: #ffffff;
+			padding: 30px;
+			margin-top: 50px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+			transition: transform 0.2s;
+		}
+
+		.container:hover {
+			transform: scale(1.05);
+		}
+
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 10px;
+			margin: 5px 0 20px 0;
+			border: none;
+			background: #f1f1f1;
+			border-radius: 5px;
+		}
+
+		input[type=text]:focus, input[type=password]:focus {
+			background-color: #ddd;
+			outline: none;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 18px;
+			transition: background-color 0.2s;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+
+		.cancelbtn {
+			background-color: #f44336;
+		}
+
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+			position: relative;
+		}
+
+		img.avatar {
+			width: 40%;
+			border-radius: 50%;
+		}
+
+		.container h2 {
+			text-align: center;
+			font-size: 28px;
+			color: #333333;
+			margin-bottom: 20px;
+		}
+
+		.cancelbtn {
+			width: auto;
+			padding: 10px 18px;
+			background-color: #f44336;
+		}
+
+		.forgot-password {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Admin Login Form</h2>
+		<form action="VerifyAdminServlet" method="post">
+			<div class="imgcontainer">
+				<img src="vote.jpeg" alt="Avatar" class="avatar">
+			</div>
+
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="username" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit">Login</button>
+			<button type="button" class="cancelbtn">Cancel</button>
+		</form>
+	</div>
+</body>
+</html>

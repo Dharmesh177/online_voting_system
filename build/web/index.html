@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Type Selection</title>
+	<style>
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			max-width: 300px;
+			margin: auto;
+			text-align: center;
+			font-family: arial;
+			background-color: #f5f5f5;
+			padding: 20px;
+			margin-top: 30px;
+			border-radius: 5px;
+			transition: transform 0.2s;
+		}
+
+		.card:hover {
+			transform: scale(1.05);
+		}
+
+		h2 {
+			font-size: 28px;
+			color: #333333;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 18px;
+			color: #666666;
+			margin-bottom: 20px;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 18px;
+			transition: background-color 0.2s;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">User Type Selection</h1>
+        <br><br>
+	<div class="card">
+		<h2>Voter</h2>
+                <form action="VoterLogin.html" method="post">
+			<input type="hidden" name="user_type" value="voter">
+			<button type="submit">Select</button>
+		</form>
+	</div>
+
+	<div class="card">
+		<h2>Admin</h2>
+		<form action="Login.html" method="post">
+			<input type="hidden" name="user_type" value="admin">
+			<button type="submit">Select</button>
+		</form>
+	</div>
+</body>
+</html>
